@@ -6,15 +6,20 @@ This repository contains an implementation of the validation procedure for regre
 - [Validation Procedure as in [1]](#validation-procedure-as-in-1)
 - [Installation](#installation)
 - [Supported Data Format](#supported-data-format)
+- [Usage](#usage)
+  - [Application of Validation Procedure](#application-of-validation-procedure)
+  - [Compute Metrics](#compute-metrics)
+- [Example: CT Scan](#example-ct-scan)
+- [Example: Ultrasound](#example-ultrasound)
 - [References](#references)
 
 # Validation Procedure as in [1]
 
-The idea of the validation procedure as described in [[1]](#1) is to perform a linear regression on the model's predictions $`y_{Model}`$ as a function of the corresponding real values $`y_{Real}`$. An ideal  model would always predict the real values. In practice, this is not possible, e.g. due to noise in the measurements. The following image illustrates the model's predictions and the regression (red) as well as the ideal model (green):
+The idea of the validation procedure as described in [[1]](#1) is to perform a linear regression on the model's predictions $`y_{Model}`$ as a function of the corresponding measurement values $`y_{Real}`$. An ideal  model would always predict the real values. In practice, this is not possible, e.g. due to noise in the measurements. The following image exemplarily illustrates a model's predictions and regression (red) as well as an ideal model (green):
 
 ![starting point of validation procedure](./figures_for_readme/validation_procedure_starting_point.png)
 
-[[1]](#1) also describes the determination of the statistical uncertainties given a significance parameter $`\alpha`$. 
+[[1]](#1) also describes the determination of the statistical uncertainties given a significance parameter $`\alpha`$. The were used to visualize the uncertainty bands in the images.
 
 The range in terms of real values of the regression model is now given by the section for which the red uncertainty band lies within the green uncertainty band:
 
@@ -30,7 +35,7 @@ The data for this implementation has to be an .xls file with exactly one spreads
 
 ![supported data format](./figures_for_readme/data_format.png)
 
-The first row is a header that describes the content of the columns. There has to be a column "y_Real" that contains the targets of the measurements, and a column "y_Model" that contains the model's predictions for the same feature values.
+The first row is a header that describes the content of the columns. There has to be a column "y_Real" that contains the targets of the measurements, and a column "y_Model" that contains the corresponding predictions of the model.
 
 As comma separator, a "." ("dot", e.g. 12.3) has to be used.
 
@@ -76,7 +81,7 @@ The other metrics are computed to be:
 - $`R^2 =  0.6615648492797841`$
 - $`R^2_{adjusted} =  0.6601904933377731`$
 
-As $`R^2, R^2_{adjusted} >> 0`$, it can be concluded that the validation procedure identified the regression model correctly valid on the whole range.
+As $`R^2, R^2_{adjusted} >> 0`$, it can be concluded that the validation procedure identified the regression model correctly as valid on the whole range.
 
 # Example: Ultrasound
 
@@ -96,7 +101,7 @@ For the non-valid part, the metrics are given by:
 - $`R^2 =  0.8983983944088139`$
 - $`R^2_{adjusted} =  0.8978380914368036`$
 
-The RMSE on the valid part of the regression model is significantly lower than the RMSE on the non-valid part. Thus, the results of the validation procedure are in agreement with the statistical metrics.
+The RMSE on the valid part of the regression model is significantly lower than the RMSE on the non-valid part. This observation is in agreement with the results of the validation procedure as a high RMSE (especially if there is a known range with a significantly lower RMSE) is a characteristic of a non-valid regression.
 
 # References
 <a id="1">[1]</a> 
