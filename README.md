@@ -1,6 +1,6 @@
 # Validation of Regression Models <!-- omit in toc -->
 
-This repository contains an implementation of the validation procedure for regression models as described in [[1]](#1). The implementation also allows the computation of the relevant metrics RMSE, $`R^2`$, and $`R^2_{adjusted}`$ on the valid and non-valid part of the regression model.
+This repository contains an implementation of the validation procedure for regression models as described in [[1]](#1). The implementation also allows the computation of the relevant metrics RMSE on the valid and non-valid part of the regression model.
 
 # Table of Contents <!-- omit in toc -->
 - [Validation Procedure as in [1]](#validation-procedure-as-in-1)
@@ -41,7 +41,7 @@ As comma separator, a "." ("dot", e.g. 12.3) has to be used.
 
 # Usage
 
-The implementation consists of the two Python scripts "apply_validation_procedure.py" and "compute_metrics.py". The script "apply_validation_procedure.py" applies the validation procedure, while "compute_metrics.py" can be used to compute RMSE, $`R^2`$, and $`R^2_{adjusted}`$ on the valid and non-valid part of the regression model.
+The implementation consists of the two Python scripts "apply_validation_procedure.py" and "compute_metrics.py". The script "apply_validation_procedure.py" applies the validation procedure, while "compute_metrics.py" can be used to compute RMSE on the valid and non-valid part of the regression model.
 
 ## Application of Validation Procedure
 
@@ -78,10 +78,7 @@ Thus, the regression model is valid on the whole range.
 
 The other metrics are computed to be:
 - $`\mathrm{RMSE} = 0.018993188330092434`$
-- $`R^2 =  0.6615648492797841`$
-- $`R^2_{adjusted} =  0.6601904933377731`$
 
-As $`R^2, R^2_{adjusted} >> 0`$, it can be concluded that the validation procedure identified the regression model correctly as valid on the whole range.
 
 # Example: Ultrasound
 
@@ -93,13 +90,9 @@ The regression model is valid for $`3.37 \leq y_{Real}\leq8.16`$.
 
 On the valid part of the regression, the following metrics are obatined:
 - $`\mathrm{RMSE} = 0.7062954864798153`$
-- $`R^2 =  0.7055976665455719`$
-- $`R^2_{adjusted} =  0.703333033211307`$
 
 For the non-valid part, the metrics are given by:
 - $`\mathrm{RMSE} = 1.6572754109094656`$
-- $`R^2 =  0.8983983944088139`$
-- $`R^2_{adjusted} =  0.8978380914368036`$
 
 The RMSE on the valid part of the regression model is significantly lower than the RMSE on the non-valid part. This observation is in agreement with the results of the validation procedure as a high RMSE (especially if there is a known range with a significantly lower RMSE) is a characteristic of a non-valid regression.
 
