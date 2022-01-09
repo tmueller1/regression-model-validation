@@ -1,5 +1,13 @@
 # Validation of Regression Models <!-- omit in toc -->
 
+This is the code and the data set necessary to reproduce the results from the the dissertation "Modellbildung mittels Symbolischer Regression zur Messunsicherheitsbestimmung komplexer Messprozesse". 
+
+Author: Mueller, Tobias 
+
+Chair of Production Metrology and Quality Management at the Laboratory for Machine Tools and Production Engineering (WZL) of RWTH Aachen University - Campus Boulevard 30, 52074 Aachen, Germany
+
+Please cite this code or the data set as: BibTex will be added after publication
+
 This repository contains an implementation of the validation procedure for regression models as described in [[1]](#1). The implementation also allows the computation of the relevant metrics RMSE on the valid and non-valid part of the regression model.
 
 # Table of Contents <!-- omit in toc -->
