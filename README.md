@@ -35,7 +35,7 @@ The range in terms of real values of the regression model is now given by the se
 
 # Installation
 
-For the installation, proceed as described here: https://git-ce.rwth-aachen.de/wzl-mq-ms-rpc/code/research/mlb-dissertation/symbolic-regression#installation.
+For the installation, proceed as described here: https://github.com/tmueller1/symbolic-regression#installation.
 
 # Supported Data Format
 
@@ -78,7 +78,7 @@ The implementation consists of the two Python scripts "apply_validation_procedur
 
 # Example: CT Scan
 
-The application of the validation procedure with $`\alpha = 0.01`$ for the symbolic regression on the CT scan dataset after the feature selection (see https://git-ce.rwth-aachen.de/wzl-mq-ms-rpc/code/research/mlb-dissertation/symbolic-regression#example-ct-scan) leads to the following plot:
+The application of the validation procedure with $`\alpha = 0.01`$ for the symbolic regression on the CT scan dataset after the feature selection (see https://github.com/tmueller1/symbolic-regression#example-ct-scan) leads to the following plot:
 
 ![result of validation procedure on CT scan dataset](./example_ct_scan/result_of_validation_procedure.jpg)
 
@@ -90,7 +90,7 @@ The other metrics are computed to be:
 
 # Example: Ultrasound
 
-For the symbolic regression on the ultrasound dataset after the feature selection (see https://git-ce.rwth-aachen.de/wzl-mq-ms-rpc/code/research/mlb-dissertation/symbolic-regression#example-ultrasound), the validation procedure with $`\alpha = 0.60`$ leads to the following plot:
+For the symbolic regression on the ultrasound dataset after the feature selection (see https://github.com/tmueller1/symbolic-regression#example-ultrasound), the validation procedure with $`\alpha = 0.60`$ leads to the following plot:
 
 ![result of validation procedure on ultrasound dataset](./example_ultrasound/result_of_validation_procedure.jpg)
 
