@@ -15,7 +15,7 @@ This repository contains an implementation of the validation procedure for regre
 
 # Validation Procedure as in [1]
 
-The idea of the validation procedure as described in [[1]](#1) is to perform a linear regression on the model's predictions $y_{Model}$ as a function of the corresponding measurement values $`y_{Real}`$. An ideal  model would always predict the real values. In practice, this is not possible, e.g. due to noise in the measurements. The following image exemplarily illustrates a model's predictions and regression (red) as well as an ideal model (green):
+The idea of the validation procedure as described in [[1]](#1) is to perform a linear regression on the model's predictions y_{Model} as a function of the corresponding measurement values $`y_{Real}`$. An ideal  model would always predict the real values. In practice, this is not possible, e.g. due to noise in the measurements. The following image exemplarily illustrates a model's predictions and regression (red) as well as an ideal model (green):
 
 ![starting point of validation procedure](./figures_for_readme/validation_procedure_starting_point.png)
 
