@@ -100,7 +100,7 @@ The RMSE on the valid part of the regression model is significantly lower than t
 <a id="1">[1]</a> 
 T. Mueller, M. Huber and R. Schmitt, "Modelling Complex Measurement Processes for Measurement Uncertainty Determination," International Journal of Quality & Reliability Management 37, 494-516 (2020)
 
-## License
+# License
 
 Copyright 2022 Tobias Mueller - RWTH Aachen Univerity - Laboratory for Machine Tools and Production Engineering WZL of RWTH Aachen
 
