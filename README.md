@@ -20,6 +20,7 @@ This repository contains an implementation of the validation procedure for regre
 - [Example: CT Scan](#example-ct-scan)
 - [Example: Ultrasound](#example-ultrasound)
 - [References](#references)
+- [License](#license)
 
 # Validation Procedure as in [1]
 
