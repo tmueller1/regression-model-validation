@@ -28,7 +28,7 @@ The idea of the validation procedure as described in [[1]](#1) is to perform a l
 
 ![starting point of validation procedure](./figures_for_readme/validation_procedure_starting_point.png)
 
-[[1]](#1) also describes the determination of the statistical uncertainties given a significance parameter $`\alpha`$. The were used to visualize the uncertainty bands in the images.
+[[1]](#1) also describes the determination of the statistical uncertainties given a significance parameter $\alpha$. The were used to visualize the uncertainty bands in the images.
 
 The range in terms of real values of the regression model is now given by the section for which the red uncertainty band lies within the green uncertainty band:
 
