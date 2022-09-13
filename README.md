@@ -86,7 +86,7 @@ The application of the validation procedure with $`\alpha = 0.01`$ for the symbo
 Thus, the regression model is valid on the whole range.
 
 The other metrics are computed to be:
-- $`\mathrm{RMSE} = 0.018993188330092434`$
+- $\mathrm{RMSE} = 0.018993188330092434$
 
 
 # Example: Ultrasound
