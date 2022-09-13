@@ -98,10 +98,10 @@ For the symbolic regression on the ultrasound dataset after the feature selectio
 The regression model is valid for $`3.37 \leq y_{Real}\leq8.16`$. 
 
 On the valid part of the regression, the following metrics are obatined:
-- $`\mathrm{RMSE} = 0.7062954864798153`$
+- $\mathrm{RMSE} = 0.7062954864798153$
 
 For the non-valid part, the metrics are given by:
-- $`\mathrm{RMSE} = 1.6572754109094656`$
+- $\mathrm{RMSE} = 1.6572754109094656$
 
 The RMSE on the valid part of the regression model is significantly lower than the RMSE on the non-valid part. This observation is in agreement with the results of the validation procedure as a high RMSE (especially if there is a known range with a significantly lower RMSE) is a characteristic of a non-valid regression.
 
