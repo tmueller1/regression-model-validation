@@ -24,7 +24,7 @@ This repository contains an implementation of the validation procedure for regre
 
 # Validation Procedure as in [1]
 
-The idea of the validation procedure as described in [[1]](#1) is to perform a linear regression on the model's predictions $`y_{Model}`$ as a function of the corresponding measurement values $`y_{Real}`$. An ideal  model would always predict the real values. In practice, this is not possible, e.g. due to noise in the measurements. The following image exemplarily illustrates a model's predictions and regression (red) as well as an ideal model (green):
+The idea of the validation procedure as described in [[1]](#1) is to perform a linear regression on the model's predictions $y_{Model}$ as a function of the corresponding measurement values $y_{Real}$. An ideal  model would always predict the real values. In practice, this is not possible, e.g. due to noise in the measurements. The following image exemplarily illustrates a model's predictions and regression (red) as well as an ideal model (green):
 
 ![starting point of validation procedure](./figures_for_readme/validation_procedure_starting_point.png)
 
@@ -79,7 +79,7 @@ The implementation consists of the two Python scripts "apply_validation_procedur
 
 # Example: CT Scan
 
-The application of the validation procedure with $`\alpha = 0.01`$ for the symbolic regression on the CT scan dataset after the feature selection (see https://github.com/tmueller1/symbolic-regression#example-ct-scan) leads to the following plot:
+The application of the validation procedure with $\alpha = 0.01$ for the symbolic regression on the CT scan dataset after the feature selection (see https://github.com/tmueller1/symbolic-regression#example-ct-scan) leads to the following plot:
 
 ![result of validation procedure on CT scan dataset](./example_ct_scan/result_of_validation_procedure.jpg)
 
@@ -91,11 +91,11 @@ The other metrics are computed to be:
 
 # Example: Ultrasound
 
-For the symbolic regression on the ultrasound dataset after the feature selection (see https://github.com/tmueller1/symbolic-regression#example-ultrasound), the validation procedure with $`\alpha = 0.60`$ leads to the following plot:
+For the symbolic regression on the ultrasound dataset after the feature selection (see https://github.com/tmueller1/symbolic-regression#example-ultrasound), the validation procedure with $\alpha = 0.60$ leads to the following plot:
 
 ![result of validation procedure on ultrasound dataset](./example_ultrasound/result_of_validation_procedure.jpg)
 
-The regression model is valid for $`3.37 \leq y_{Real}\leq8.16`$. 
+The regression model is valid for $3.37 \leq y_{Real}\leq8.16$. 
 
 On the valid part of the regression, the following metrics are obatined:
 - $\mathrm{RMSE} = 0.7062954864798153$
