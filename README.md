@@ -6,7 +6,19 @@ Author: Mueller, Tobias
 
 Chair of Production Metrology and Quality Management at the Laboratory for Machine Tools and Production Engineering (WZL) of RWTH Aachen University - Campus Boulevard 30, 52074 Aachen, Germany
 
-Please cite this code or the data set as: BibTex will be added after publication 
+Please cite this code or the data set as: 
+      author       = {Müller, Tobias},
+      title        = {{M}odellbildung mittels symbolischer {R}egression zur
+                      {M}essunsicherheitsbestimmung komplexer {M}essprozesse},
+      volume       = {7/2023},
+      school       = {RWTH Aachen University},
+      type         = {Dissertation},
+      address      = {Aachen},
+      publisher    = {Apprimus Verlag},
+      isbn         = {978-3-98555-146-0},
+      series       = {Ergebnisse aus der Produktionstechnik},
+      year         = {2023},
+      doi          = {10.18154/RWTH-2023-01146}
 
 This repository contains an implementation of the validation procedure for regression models as described in [[1]](#1). The implementation also allows the computation of the relevant metrics RMSE on the valid and non-valid part of the regression model.
 
